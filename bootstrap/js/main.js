@@ -12,18 +12,18 @@
         });
 
 // opciones del menú
-     $('#carta').click(function(){
+ /*    $('#carta').click(function(){
           //  $(this).parent('li').prop('class','active');
         //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
            $('#contenedor').load('carta.html');
-     });
+     });*/
      $('#inicio').click(function(){
           //  $(this).parent('li').prop('class','active');
         //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
            $('#contenedor').load('inicio.html');
     });
     $('#menus').click(function(){
-          //  $(this).parent('li').prop('class','active');
+            $(this).parent('li').prop('class','active');
         //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
            $('#contenedor').load('menus.html');
     });
