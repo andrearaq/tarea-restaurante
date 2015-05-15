@@ -4,7 +4,44 @@
 @bgHighlight    : #D8F6CE;
 @colDefault     : #0B610B;
 @colHighlight   : #BDBDBD;
+@colFacebook    : #3b5998;
+@colTwitter     : #00aced;
+@colGoogle      : #dd4b39;
 @dropDown       : true;
+@breadcrumb-bg  : transparent;
+@breadcrumb-color: #777;
+@jumbotron-bg   : #D2EAC8;
+@font-size-base : 14px;
+@jumbotron-font-size:  ceil((@font-size-base * 1.2));
+@jumbotron-heading-color: #0B610B;
+@jumbotron-padding:  3%;
+
+.breadcrumb {
+  background-color: @breadcrumb-bg;
+  color: @breadcrumb-color;
+}
+.jumboinicio(){
+    background-color: fade(@jumbotron-bg, 50%);
+    width: 80%;
+    margin-bottom: 5%;
+    border: 4px solid @colDefault;
+    padding: @jumbotron-padding;
+    p {
+        margin: 1%;
+        font-size: @jumbotron-font-size;
+        font-weight: 200;
+    }
+    h1 small {
+        color: @jumbotron-heading-color;
+      }
+}
+#juminicio{
+    .jumboinicio;
+}
+.jumbmenu {
+    .jumboinicio;
+}
+
 .ddm() when (@dropDown) {
   > .dropdown-menu {
     background-color: @bgDefault;
@@ -68,3 +105,4 @@
 body {
   background-image: @body-bg-img;
 }
+
