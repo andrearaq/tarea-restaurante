@@ -5,10 +5,10 @@
   color: #777777;
 }
 #juminicio {
-  background-color: rgba(210, 234, 200, 0.5);
-  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
   margin-bottom: 5%;
-  border: 4px solid #0b610b;
+  border: 5px solid #e2a2a0;
   padding: 3%;
 }
 #juminicio p {
@@ -20,10 +20,10 @@
   color: #0b610b;
 }
 .jumbmenu {
-  background-color: rgba(210, 234, 200, 0.5);
-  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
   margin-bottom: 5%;
-  border: 4px solid #0b610b;
+  border: 5px solid #e2a2a0;
   padding: 3%;
 }
 .jumbmenu p {
@@ -34,19 +34,28 @@
 .jumbmenu h1 small {
   color: #0b610b;
 }
-#jumbmapa {
-  background-color: rgba(210, 234, 200, 0.5);
-  width: 80%;
-  margin-bottom: 5%;
-  border: 4px solid #0b610b;
-  padding: 3%;
+.texto {
+  font-family: Georgia;
+  line-height: 2;
 }
-#jumbmapa p {
-  margin: 1%;
-  font-size: 17px;
-  font-weight: 200;
+.texto2 {
+  font-family: Georgia;
+  line-height: 2;
+  font-size: 16px;
+  margin-top: 5px;
 }
-#jumbmapa h1 small {
+.texto3 p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.table > td {
+  padding: 2px;
+}
+.footer {
+  border-top: thick dotted #e2a2a0;
+}
+h2 {
   color: #0b610b;
 }
 .navbar-default {

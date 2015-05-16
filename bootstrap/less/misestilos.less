@@ -7,24 +7,27 @@
 @colFacebook    : #3b5998;
 @colTwitter     : #00aced;
 @colGoogle      : #dd4b39;
+@colBorde       : #E2A2A0;
 @dropDown       : true;
 @breadcrumb-bg  : transparent;
 @breadcrumb-color: #777;
-@jumbotron-bg   : #D2EAC8;
+@jumbotron-bg   : #FFFFFF;
 @font-size-base : 14px;
 @jumbotron-font-size:  ceil((@font-size-base * 1.2));
 @jumbotron-heading-color: #0B610B;
 @jumbotron-padding:  3%;
-
+@font-family-textos:   Georgia;
+@font-family-textos2:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@table-cell-padding:   2px;
 .breadcrumb {
   background-color: @breadcrumb-bg;
   color: @breadcrumb-color;
 }
 .jumboinicio(){
     background-color: fade(@jumbotron-bg, 50%);
-    width: 80%;
+    width: 100%;
     margin-bottom: 5%;
-    border: 4px solid @colDefault;
+    border: 5px solid @colBorde;
     padding: @jumbotron-padding;
     p {
         margin: 1%;
@@ -41,7 +44,31 @@
 .jumbmenu {
     .jumboinicio;
 }
-
+.texto {
+    font-family: @font-family-textos;
+    line-height: 2;
+}
+.texto2 {
+    .texto;
+    font-size: ceil((@font-size-base * 1.1));
+    margin-top: 5px;
+}
+.texto3 p {
+    font-family: @font-family-textos2;
+    line-height: 1.5;
+    font-size: ceil((@font-size-base * 1));
+}
+.table {
+    > td {
+        padding: @table-cell-padding;
+    }
+}
+.footer {
+    border-top: thick dotted @colBorde;
+}
+h2 {
+    color: @colDefault;
+}
 .ddm() when (@dropDown) {
   > .dropdown-menu {
     background-color: @bgDefault;
