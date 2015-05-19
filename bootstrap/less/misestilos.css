@@ -34,13 +34,17 @@
 .jumbmenu h1 small {
   color: #0b610b;
 }
-.texto {
+.textoInicio {
   font-family: Georgia;
   line-height: 2;
 }
+.texto {
+  font-family: Georgia;
+  line-height: 1.4;
+}
 .texto2 {
   font-family: Georgia;
-  line-height: 2;
+  line-height: 1.4;
   font-size: 16px;
   margin-top: 5px;
 }
@@ -57,6 +61,21 @@
 }
 h2 {
   color: #0b610b;
+}
+.imgpeque {
+  width: 20%;
+  height: 25%;
+}
+.imgpeque ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: inline;
+}
+.imgpeque ul li {
+  list-style: none;
+}
+.imgpeque ul li img {
+  cursor: pointer;
 }
 .navbar-default {
   width: 60%;

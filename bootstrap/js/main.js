@@ -10,6 +10,11 @@
     $('#thumbs').delegate('img','click', function(){                                                                $('#largeImage').attr('src',$(this).attr('src'));
             $('#description').html($(this).attr('alt'));
         });
+ $('img').on('click',function(){
+    var src = $(this).attr('src');
+    $('#largeImage').attr('src',src);
+   
+}); 
 
 // opciones del menú
  /*    $('#carta').click(function(){

@@ -44,9 +44,13 @@
 .jumbmenu {
     .jumboinicio;
 }
-.texto {
+.textoInicio {
     font-family: @font-family-textos;
     line-height: 2;
+}
+.texto {
+    font-family: @font-family-textos;
+    line-height: 1.4;
 }
 .texto2 {
     .texto;
@@ -68,6 +72,21 @@
 }
 h2 {
     color: @colDefault;
+}
+.imgpeque{
+    width: 20%;
+    height: 25%;
+    ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+          display: inline;
+      }
+      ul li {     
+          list-style:none;
+      }
+      ul li img {
+          cursor: pointer;
+      }
 }
 .ddm() when (@dropDown) {
   > .dropdown-menu {
