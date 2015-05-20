@@ -16,88 +16,6 @@
    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
    <!-- <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">-->
     <link href="bootstrap/less/misestilos.css" rel="stylesheet">
-       
-    <style>
-        body {
-          background-image: url('images/fondo.jpg');
-        }
-        .caja-redes {
-    margin: 0 auto;
-    padding: 15px;
-    position: relative;
-    width: 600px;
-}
-.caja-redes a {
-	text-align: center;
-	font-size: 20px;
-}
-        .icon-button {
-	background-color: white;
-	border-radius: 3em;
-	cursor: pointer;
-	display: inline-block;
-	height: 3em;
-	line-height: 3em;
-	margin: 0 8px;
-	position: relative;
-	width: 3em;
-}
-        .icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-	width: 0;
-}
-.icon-button:hover span {
-	width: 3em;
-	height: 3em;
-	border-radius: 3em;
-	margin: -1.5em;
-}
-.twitter span {
-	background-color: #4099ff;
-}
-.facebook span {
-	background-color: #3B5998;
-}
-.google-plus span {
-	background-color: #db5a3c;
-}
-.icon-button i {
-	background: none;
-	color: white;
-	left: 0;
-	line-height: 3em;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-	width: 3em;
-	z-index: 2;
-}
-.icon-button .icon-twitter {
-	color: #4099ff;
-}
-.icon-button .icon-facebook {
-	color: #3B5998;
-}
-.icon-button .icon-google-plus {
-	color: #db5a3c;
-}
-.icon-button:hover, .icon-button:hover, .icon-button:hover .icon-twitter, .icon-button:hover .icon-facebook, .icon-button:hover .icon-google-plus {
-	color: white;
-}
-    </style>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -107,71 +25,69 @@
 </head>
     <body>
         <div class="container-fluid">
-        <div class="row" style="margin-top:20px;">
-            <div class="col-lg-2 col-md-3 col-sm-5">
-                <img class="img-responsive" src="images/logo_gris_rallado_md.png">
+          <div>
+            <div class="logo">
+                 <img class="img-responsive" src="images/logo_gris_rallado_md.png">
             </div>
-            <div class="col-md-4 col-sm-2">
+            
+            <div class="logo">
+              <nav class="navbar navbar-default" role="navigation">
+             <div class="container"> 
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Menu de navegación</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                    <a class="navbar-brand" href="index.html">Restaurante Antonio</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#" id="inicio">Inicio</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="carta">Carta <span class="caret"></span></a>
+                        <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Carta<b class="caret"></b></a>-->
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" id="entrantes">Entrantes</a></li>
+                                <li><a href="#" id="primeros">Primeros</a></li>
+                                <li><a href="#" id="segundos">Segundos</a></li>
+                                <li><a href="#" id="postres">Postres</a></li>    
+                                <li><a href="#" id="bebidas">Bebidas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="menus">Menús</a></li>
+                        <li><a href="#" id="galeria">Galería</a></li>
+                        <li><a href="#" id="reservas">Reservas</a></li>
+                        <li><a href="#" id="localizacion">Localización</a></li>
+                        <li><a href="#" id="chef">Chef Sergio</a></li>
+                    </ul>
+                </div>
+                 </div>
+               </nav>
+            </div>
+     <!--      <div class="logo">
                 <div><h3 class="texto">Restaurante Antonio</h3></div>
                 <div>Plaza San Pedro Nolasco, 5 (Zaragoza)</div>
                 <div>Telf.: 976 39 74 74</div>
-            </div>
-        </div>
+            </div>-->
+          </div>   
+    
+        <div class="clearfix"></div>
         
-        <nav class="navbar navbar-default" role="navigation">
-         <div class="container"> 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Menu de navegación</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Restaurante Antonio</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#" id="inicio">Inicio</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="carta">Carta <span class="caret"></span></a>
-                    <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Carta<b class="caret"></b></a>-->
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#" id="entrantes">Entrantes</a></li>
-                            <li><a href="#" id="primeros">Primeros</a></li>
-                            <li><a href="#" id="segundos">Segundos</a></li>
-                            <li><a href="#" id="postres">Postres</a></li>    
-                            <li><a href="#" id="bebidas">Bebidas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" id="menus">Menús</a></li>
-                    <li><a href="#" id="galeria">Galería</a></li>
-                    <li><a href="#" id="reservas">Reservas</a></li>
-                    <li><a href="#" id="localizacion">Localización</a></li>
-                    <li><a href="#" id="chef">Chef Sergio</a></li>
-                </ul>
-            </div>
-             </div>
-          </nav>
-            
-         
-           
-            <!-- /.navbar-collapse -->
-         
        </div>
         <!-- /.container -->
-    
-
  
     <div class="container-fluid" id="contenedor">
             <!--/.container-fluid -->
     </div>
      <footer class="footer">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="caja-redes">

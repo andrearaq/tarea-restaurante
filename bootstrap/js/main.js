@@ -1,27 +1,12 @@
 // codigo javascript
-//$(document).ready(function() {
     
   //  $('#fecha').datetimepicker();
     $('.dropdown-toggle').dropdown();
      $('.carousel').carousel(); 
      $('#contenedor').load('inicio.html');
 
-// codigo para la galeria de imagenes
-    $('#thumbs').delegate('img','click', function(){                                                                $('#largeImage').attr('src',$(this).attr('src'));
-            $('#description').html($(this).attr('alt'));
-        });
- $('img').on('click',function(){
-    var src = $(this).attr('src');
-    $('#largeImage').attr('src',src);
-   
-}); 
-
 // opciones del menú
- /*    $('#carta').click(function(){
-          //  $(this).parent('li').prop('class','active');
-        //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
-           $('#contenedor').load('carta.html');
-     });*/
+
      $('#inicio').click(function(){
           //  $(this).parent('li').prop('class','active');
         //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
@@ -66,29 +51,26 @@
            $('#contenedor').load('primeros.html');
     });
 
-$('#segundos').click(function(){
-          //  $(this).parent('li').prop('class','active');
-        //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
-           $('#contenedor').load('segundos.html');
-    });
-$('#postres').click(function(){
-          //  $(this).parent('li').prop('class','active');
-        //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
-         //   $('#cabecera').hide();
-        //    $('#cabecera2').show();
-           $('#contenedor').load('postres.html');
-    });
-$('#bebidas').click(function(){
-          //  $(this).parent('li').prop('class','active');
-        //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
-           $('#contenedor').load('bebidas.html');
-   //$('#contenedor').load('chef.html');
-    });
+    $('#segundos').click(function(){
+              //  $(this).parent('li').prop('class','active');
+            //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
+               $('#contenedor').load('segundos.html');
+        });
+    $('#postres').click(function(){
+              //  $(this).parent('li').prop('class','active');
+            //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
+             //   $('#cabecera').hide();
+            //    $('#cabecera2').show();
+               $('#contenedor').load('postres.html');
+        });
+    $('#bebidas').click(function(){
+              //  $(this).parent('li').prop('class','active');
+            //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
+               $('#contenedor').load('bebidas.html');
+       //$('#contenedor').load('chef.html');
+        });
 
-$('#botonchef').click(function(){
-          //  $(this).parent('li').prop('class','active');
-        //    $('#li_inicio, #li_localizacion, #li_menu, #li_mesa, #li_platos').prop('class','');
-    alert("pulsado boton ver");
-           $('#contenedor').load('chef.html');
-    }); 
+// codigo para la galeria de imagenes
+  /*  $('#contenedor').on('click','.gal', function(){                                                                            $                   $('#largeImage').attr('src',$(this).attr('src'));
+    });*/
  
