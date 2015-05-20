@@ -1,9 +1,10 @@
 /* variables less adaptadas a la tarea */
 @body-bg-img    : url('../../images/fondo.jpg') ;
-@bgDefault      : #D8F6CE;
+@bgDefault      : #E2A2A0;
 @bgHighlight    : #D8F6CE;
 @colDefault     : #0B610B;
 @colHighlight   : #BDBDBD;
+@colHover       : #ffbbbc;
 @colFacebook    : #3b5998;
 @colTwitter     : #00aced;
 @colGoogle      : #dd4b39;
@@ -21,8 +22,9 @@
 @table-cell-padding:   2px;
 
 .logo {
-    float: left;
+   z-index: 10;
 }
+
 .breadcrumb {
   background-color: @breadcrumb-bg;
   color: @breadcrumb-color;
@@ -80,7 +82,9 @@ h2 {
 .margen {
    margin-left: 10%;
 }
-    
+#truco {
+    color: white;
+}
 .ddm() when (@dropDown) {
   > .dropdown-menu {
     background-color: @bgDefault;
@@ -92,11 +96,14 @@ h2 {
     .divider {
       background-color: @bgHighlight;}}}
 .navbar-default {
-    width: 60%;
+   
+    width: 80%%;
   background-color: @bgDefault;
   border-color: @bgHighlight;
   .navbar-brand {
     color: @colDefault;
+    background-color: @breadcrumb-bg;
+    
     &:hover, &:focus { 
       color: @colHighlight; }}
   .navbar-text {
@@ -128,7 +135,10 @@ h2 {
   .navbar-link {
     color: @colDefault;
     &:hover {
-      color: @colHighlight; }}}
+      color: @colHighlight;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu {
